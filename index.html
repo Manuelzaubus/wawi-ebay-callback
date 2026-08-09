@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weiterleitung zur WaWi</title>
+</head>
+<body>
+  <p>Du wirst zur lokalen WaWi weitergeleitet …</p>
+
+  <script>
+    const localCallback =
+      "http://192.168.178.59/einstellungen/api-verbindungen/ebay/callback/";
+
+    window.location.replace(
+      localCallback + window.location.search + window.location.hash
+    );
+  </script>
+</body>
+</html>
